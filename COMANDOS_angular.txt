@@ -1,0 +1,8 @@
+INSTALAR ANGULAR
+npm install -g @angular/cli
+
+crear proyecto de angular
+ng new --no-standalone nameproyect
+
+iniciar server
+ng serve
