@@ -6,3 +6,8 @@ ng new --no-standalone nameproyect
 
 iniciar server
 ng serve
+
+"creacion de componente"
+coman
+ng g c components/micomponente
+"
