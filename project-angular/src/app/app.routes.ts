@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
-import { MicomponenteComponent} from './components/micomponente/micomponente.component'
+import { MicomponenteComponent} from './components/micomponente/micomponente.component';
+import { ErrorComponent } from './components/error/error.component';
 
 
 export const routes: Routes = [
@@ -9,5 +10,13 @@ export const routes: Routes = [
         component: MicomponenteComponent,
        // canActivate: [IdentityGuard]
     },
+
+
+    {
+      path: '**',
+      component: ErrorComponent,
+     // canActivate: [IdentityGuard]
+  },
+
   
   ]

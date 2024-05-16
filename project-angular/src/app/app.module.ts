@@ -7,11 +7,13 @@ import { routes } from './app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MicomponenteComponent } from './components/micomponente/micomponente.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MicomponenteComponent
+    MicomponenteComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
