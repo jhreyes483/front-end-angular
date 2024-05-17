@@ -11,19 +11,21 @@ export class PaginaPruebaComponent implements OnInit {
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
-  ){
+  ) {
+
+
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this._route.params.subscribe(params => {
       console.log(params['id']);
     });
   }
 
-  redireccion(){
-   // this._router.navigate(['/form']) /** redigir sin varibles  **/
-   this._router.navigate(['pagina','Javier Reyes']);
+  redireccion() {
+    // this._router.navigate(['/form']) /** redigir sin varibles  **/
+    this._router.navigate(['pagina', 'Javier Reyes']);
 
   }
 }

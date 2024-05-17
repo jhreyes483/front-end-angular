@@ -31,6 +31,8 @@ body {
     }
 }
 
+
+
 .nav-item a{
 
     font-weight: bold;
@@ -56,4 +58,26 @@ footer{
 footer p{
     margin: 0px;
     padding: 0px;
+}
+
+
+.position-left{
+    float: left;
+}
+
+.position-right{
+    float: right;
+}
+
+.container-inage-movie{
+    width: 100px !important;
+}
+
+.image-wrap{
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 100%;
+    float: left;
 }
