@@ -43,3 +43,17 @@ body {
 .nav-item a:hover, .active{
     color: #f13e3e !important;
 }
+
+
+footer{
+    background: #f7f7f7;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    color: #444;
+}
+
+footer p{
+    margin: 0px;
+    padding: 0px;
+}
