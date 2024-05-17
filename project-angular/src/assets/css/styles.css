@@ -88,16 +88,43 @@ footer p {
 }
 
 
-.year{
+.year {
     color: white !important;
     padding: 5px;
     display: block;
     width: 100%;
     border-radius: 10px;
 }
+
 .year-green {
     background-color: rgb(22, 155, 50);
 }
+
 .year-red {
     background-color: red;
+}
+
+
+.conntent-component {
+
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 15px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.sidevar {
+    padding-left: 0;
+    width: 20%;
+}
+
+@media (max-width: 1129px) {
+    .conntent-component {
+        width: 96%;
+    }
+    .sidevar{
+        width: 96%;
+    }
 }

@@ -9,9 +9,12 @@ export class PeliculasComponent implements DoCheck, OnInit, OnDestroy {
 
   public peliculas;
   public title : string;
+  public homeText : string;
   public mostrarPeliculas : boolean;
   constructor() {
     this.title = "Peliculas"
+    this.homeText = "Peliculas"
+
     this.mostrarPeliculas =  true;
     console.log("constructor lanzado")
 

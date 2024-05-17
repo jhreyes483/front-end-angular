@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class FormularioComponent {
   public title : string;
+  public homeText : string;
 
   constructor(){
     this.title =  'Formulario'
+    this. homeText = 'Formulario'
   }
 }

@@ -7,11 +7,12 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
   styleUrl: './pagina-prueba.component.css'
 })
 export class PaginaPruebaComponent implements OnInit {
-
+  public homeText;
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
   ) {
+    this.homeText = "Pagina test";
 
 
 

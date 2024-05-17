@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 
-
-
 export class HomeComponent {
   public  title : string;
+  public homeText : string;
   constructor(){
+    this.homeText ="Bienvenido a la home";
     this.title = 'Ultimos articulos';
   }
 

@@ -1,70 +1,78 @@
-<div class="container mt-5">
-    <h2>{{title}}</h2>
-    <button (click)="cambiarTitulo()" class="btn btn-primary">Pulsame</button>
-</div>
+<app-slider [nombre]="homeText"></app-slider>
+<div class="conntent-component">
+    <div class="container mt-5">
+        <h2>{{title}}</h2>
+        <button (click)="cambiarTitulo()" class="btn btn-primary">Pulsame</button>
+    </div>
 
-<h2>Numero de peliculas</h2>
-
-
-<div *ngIf=" peliculas.length <= 3">
-    Hay pocas peliculas
-</div>
-<div *ngIf=" peliculas.length > 3">
-    Hay muchas peliculas
-</div>
-
-<hr>
-<h2>
-    <p>Listado de peliculas</p>
-</h2>
-<hr>
-<div id="article" *ngIf="peliculas">
-    <div *ngFor="let pelicula of peliculas" class=" card-body row">
-
-        <div class=" container-inage-movie  p-0  m-0 img-article">
-            <img class="image-wrap" src="{{pelicula.image}}" alt="{{pelicula.title}}" title="{{pelicula.title}}">
-            <!-- 
-             <input type="button" class="btn btn-sm btn-warning float-end" value="Marcar como favorito">
-            -->
-            <!-- 
-                forma 1 por style
-                <span [style.background] ="pelicula.year > 2016 ? 'green' : 'red' "
-                forma 2 class.
-                <span class="year" [class.year-green]="pelicula.year > 2016" [class.year-red]="pelicula.year <= 2016">
-            -->
-
-            <span class="year" [ngClass]="{
-                'year-green' : pelicula.year > 2016,
-                'year-red' : pelicula.year <= 2016
-            }"
-            >
-                {{pelicula.year}}
-            </span>
-        </div>
-
-        <div class="float-start col-md-8 row m-0  p-0 row">
-            <h4 class="col-md-12 mt-1 "><b class="float-start position-left">{{ pelicula.title }}</b></h4>
-            <p class="float-start ml-3 pt-0 position-left">
-                <span class="text-muted">hace 5 minutos </span>
-            </p>
-            <div class="col-md-12 p-0 m-0 pl-3  position-left">
-                <p class="float-start  pt-0 position-left text-white">
+    <h2>Numero de peliculas</h2>
 
 
-                </p>
+    <div *ngIf=" peliculas.length <= 3">
+        Hay pocas peliculas
+    </div>
+    <div *ngIf=" peliculas.length > 3">
+        Hay muchas peliculas
+    </div>
+
+    <hr>
+    <h2>
+        <p>Listado de peliculas</p>
+    </h2>
+    <hr>
+    <div id="article" *ngIf="peliculas">
+        <div *ngFor="let pelicula of peliculas" class=" card-body row">
+
+            <div class=" container-inage-movie  p-0  m-0 img-article">
+                <img class="image-wrap" src="{{pelicula.image}}" alt="{{pelicula.title}}" title="{{pelicula.title}}">
+                <!-- 
+                 <input type="button" class="btn btn-sm btn-warning float-end" value="Marcar como favorito">
+                -->
+                <!-- 
+                    forma 1 por style
+                    <span [style.background] ="pelicula.year > 2016 ? 'green' : 'red' "
+                    forma 2 class.
+                    <span class="year" [class.year-green]="pelicula.year > 2016" [class.year-red]="pelicula.year <= 2016">
+                -->
+
+                <span class="year" [ngClass]="{
+                    'year-green' : pelicula.year > 2016,
+                    'year-red' : pelicula.year <= 2016
+                }">
+                    {{pelicula.year}}
+                </span>
             </div>
-            <div class="col-md-12 p-0 m-0 pl-3 position-left">
-                <p class="position-left">
-                    Leer más
+
+            <div class="float-start col-md-8 row m-0  p-0 row">
+                <h4 class="col-md-12 mt-1 "><b class="float-start position-left">{{ pelicula.title }}</b></h4>
+                <p class="float-start ml-3 pt-0 position-left">
+                    <span class="text-muted">hace 5 minutos </span>
                 </p>
+                <div class="col-md-12 p-0 m-0 pl-3  position-left">
+                    <p class="float-start  pt-0 position-left text-white">
+
+
+                    </p>
+                </div>
+                <div class="col-md-12 p-0 m-0 pl-3 position-left">
+                    <p class="position-left">
+                        Leer más
+                    </p>
+                </div>
+                <!-- 
+    
+            <p class="float-start ">
+                    <a class="float-start font-2">Ver mas</a>
+                </p>
+                 -->
+
             </div>
-            <!-- 
-
-        <p class="float-start ">
-                <a class="float-start font-2">Ver mas</a>
-            </p>
-             -->
-
         </div>
     </div>
+
+
+
+
+
 </div>
+<app-sidevar></app-sidevar>
