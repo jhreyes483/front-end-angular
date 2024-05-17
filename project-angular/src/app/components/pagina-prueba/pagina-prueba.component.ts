@@ -20,4 +20,10 @@ export class PaginaPruebaComponent implements OnInit {
       console.log(params['id']);
     });
   }
+
+  redireccion(){
+   // this._router.navigate(['/form']) /** redigir sin varibles  **/
+   this._router.navigate(['pagina','Javier Reyes']);
+
+  }
 }
