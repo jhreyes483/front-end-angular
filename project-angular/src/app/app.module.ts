@@ -13,6 +13,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { SidevarComponent } from './components/sidevar/sidevar.component';
+import { HomeComponent } from './components/home/home.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { SidevarComponent } from './components/sidevar/sidevar.component';
     FooterComponent,
     SliderComponent,
     SidevarComponent,
+    HomeComponent,
+    BlogComponent,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,10 +7,10 @@ import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
 })
 export class PeliculasComponent implements DoCheck, OnInit, OnDestroy {
 
-  public titulo: string;
+  public title : string;
   public mostrarPeliculas : boolean;
   constructor() {
-    this.titulo = "Componente peliculas"
+    this.title = "Peliculas"
     this.mostrarPeliculas =  true;
     console.log("constructor lanzado")
   }
@@ -27,7 +27,7 @@ export class PeliculasComponent implements DoCheck, OnInit, OnDestroy {
   }
 
   cambiarTitulo() {
-    this.titulo = "Se cambio titulo"
+    this.title = "Se cambio titulo"
   }
 
 

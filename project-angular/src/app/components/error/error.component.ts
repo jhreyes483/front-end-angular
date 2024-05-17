@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './error.component.css'
 })
 export class ErrorComponent {
-  component_name : string = 'Pagina no encotrada'
+  component_name : string = '404 Pagina no encotrada'
 }

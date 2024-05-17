@@ -30,3 +30,16 @@ body {
         transform: scale(1);
     }
 }
+
+.nav-item a{
+
+    font-weight: bold;
+}
+
+.dropdown-item{
+    color : rgba(0, 0, 0, .5) !important;
+}
+
+.nav-item a:hover, .active{
+    color: #f13e3e !important;
+}
