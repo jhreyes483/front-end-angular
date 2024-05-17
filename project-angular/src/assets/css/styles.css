@@ -1,4 +1,32 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+    text-align: center;
+    /* centra todo el contedo */
+    margin: 0px;
+    padding: 0px;
+    /** fuentes */
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+
+.my-logo{
+    border-radius: 3em;
+    padding: 0px;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    animation: palpitar infinite 1s linear;
+}
+@keyframes palpitar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

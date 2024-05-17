@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { MicomponenteComponent } from './components/micomponente/micomponente.component';
 import { ErrorComponent } from './components/error/error.component';
 import { PeliculasComponent } from './components/peliculas/peliculas.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { PeliculasComponent } from './components/peliculas/peliculas.component';
     MicomponenteComponent,
     ErrorComponent,
     PeliculasComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
