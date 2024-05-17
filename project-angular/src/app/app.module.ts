@@ -16,6 +16,7 @@ import { SidevarComponent } from './components/sidevar/sidevar.component';
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import{ PaginaPruebaComponent } from './components/pagina-prueba/pagina-prueba.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     HomeComponent,
     BlogComponent,
     FormularioComponent,
+    PaginaPruebaComponent
+
   ],
   imports: [
     BrowserModule,

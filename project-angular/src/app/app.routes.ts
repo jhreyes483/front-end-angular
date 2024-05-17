@@ -5,6 +5,7 @@ import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { PaginaPruebaComponent } from './components/pagina-prueba/pagina-prueba.component';
 
 
 export const routes: Routes = [
@@ -24,12 +25,16 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
-    path :'form',
+    path: 'form',
     component: FormularioComponent
   },
   {
     path: 'blog',
     component: BlogComponent
+  },
+  {
+    path: 'pagina/:id',
+    component: PaginaPruebaComponent
   },
 
 
