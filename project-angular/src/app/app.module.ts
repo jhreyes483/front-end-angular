@@ -11,6 +11,8 @@ import { ErrorComponent } from './components/error/error.component';
 import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { SidevarComponent } from './components/sidevar/sidevar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     PeliculasComponent,
     HeaderComponent,
     FooterComponent,
+    SliderComponent,
+    SidevarComponent,
   ],
   imports: [
     BrowserModule,

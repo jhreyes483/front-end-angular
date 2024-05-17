@@ -1,5 +1,27 @@
 <div class="container-fluid col-md-10"> <!-- Contenedor principal -->
   <app-header></app-header>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
-</div>
+
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <app-slider></app-slider>
+    </div>
+
+    <div class="col-md-8">
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <app-sidevar></app-sidevar>
+    </div>
+    <div class="col-md-12">
+      <app-footer></app-footer>
+    </div>
+
+
+
+    
+  </div>
