@@ -14,7 +14,9 @@
 </div>
 
 <hr>
-<h2><p>Listado de peliculas</p></h2>
+<h2>
+    <p>Listado de peliculas</p>
+</h2>
 <hr>
 <div id="article" *ngIf="peliculas">
     <div *ngFor="let pelicula of peliculas" class=" card-body row">
@@ -24,6 +26,20 @@
             <!-- 
              <input type="button" class="btn btn-sm btn-warning float-end" value="Marcar como favorito">
             -->
+            <!-- 
+                forma 1 por style
+                <span [style.background] ="pelicula.year > 2016 ? 'green' : 'red' "
+                forma 2 class.
+                <span class="year" [class.year-green]="pelicula.year > 2016" [class.year-red]="pelicula.year <= 2016">
+            -->
+
+            <span class="year" [ngClass]="{
+                'year-green' : pelicula.year > 2016,
+                'year-red' : pelicula.year <= 2016
+            }"
+            >
+                {{pelicula.year}}
+            </span>
         </div>
 
         <div class="float-start col-md-8 row m-0  p-0 row">
@@ -31,7 +47,13 @@
             <p class="float-start ml-3 pt-0 position-left">
                 <span class="text-muted">hace 5 minutos </span>
             </p>
-            <div class="col-md-12 pt-0 position-left  ">
+            <div class="col-md-12 p-0 m-0 pl-3  position-left">
+                <p class="float-start  pt-0 position-left text-white">
+
+
+                </p>
+            </div>
+            <div class="col-md-12 p-0 m-0 pl-3 position-left">
                 <p class="position-left">
                     Leer más
                 </p>

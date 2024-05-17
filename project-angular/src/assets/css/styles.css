@@ -11,7 +11,7 @@ body {
 }
 
 
-.my-logo{
+.my-logo {
     border-radius: 3em;
     padding: 0px;
     margin: 0px;
@@ -19,13 +19,16 @@ body {
     height: 30px;
     animation: palpitar infinite 1s linear;
 }
+
 @keyframes palpitar {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.2);
     }
+
     100% {
         transform: scale(1);
     }
@@ -33,21 +36,22 @@ body {
 
 
 
-.nav-item a{
+.nav-item a {
 
     font-weight: bold;
 }
 
-.dropdown-item{
-    color : rgba(0, 0, 0, .5) !important;
+.dropdown-item {
+    color: rgba(0, 0, 0, .5) !important;
 }
 
-.nav-item a:hover, .active{
+.nav-item a:hover,
+.active {
     color: #f13e3e !important;
 }
 
 
-footer{
+footer {
     background: #f7f7f7;
     width: 100%;
     height: 70px;
@@ -55,29 +59,45 @@ footer{
     color: #444;
 }
 
-footer p{
+footer p {
     margin: 0px;
     padding: 0px;
 }
 
 
-.position-left{
+.position-left {
     float: left;
 }
 
-.position-right{
+.position-right {
     float: right;
 }
 
-.container-inage-movie{
-    width: 100px !important;
+.container-inage-movie {
+    width: 130px !important;
+
 }
 
-.image-wrap{
+.image-wrap {
     border-radius: 10px;
     padding: 0px;
     margin: 0px;
-    width: 100px;
+    width: 100%;
     height: 100%;
     float: left;
+}
+
+
+.year{
+    color: white !important;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+.year-green {
+    background-color: rgb(22, 155, 50);
+}
+.year-red {
+    background-color: red;
 }
