@@ -17,6 +17,8 @@ import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import{ PaginaPruebaComponent } from './components/pagina-prueba/pagina-prueba.component';
+import { PeliculaComponent } from './components/pelicula/pelicula.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import{ PaginaPruebaComponent } from './components/pagina-prueba/pagina-prueba.c
     HomeComponent,
     BlogComponent,
     FormularioComponent,
-    PaginaPruebaComponent
+    PaginaPruebaComponent,
+    PeliculaComponent,
+
 
   ],
   imports: [

@@ -28,7 +28,6 @@ export class PeliculasComponent implements DoCheck, OnInit, OnDestroy {
 
   ngOnInit() {
     console.log("Componente iniciado")
-    console.log(this.peliculas)
   }
 
   ngDoCheck(): void {

@@ -121,6 +121,21 @@ footer p {
 }
 
 
+@media (max-width:768px ){
+ .position-left{
+    width: 100%;
+
+ }
+
+ 
+ .container-inage-movie {
+    display: flex;
+    flex-direction: row;
+
+ }
+
+}
+
 
 @media (max-width: 1129px) {
     .conntent-component {
