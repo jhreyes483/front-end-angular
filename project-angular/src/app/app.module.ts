@@ -18,6 +18,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import{ PaginaPruebaComponent } from './components/pagina-prueba/pagina-prueba.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { PeliculasFComponent } from './components/peliculas-f/peliculas-f.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
     FormularioComponent,
     PaginaPruebaComponent,
     PeliculaComponent,
+    PeliculasFComponent,
 
 
   ],

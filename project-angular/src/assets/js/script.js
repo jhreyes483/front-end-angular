@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('resize', function () {
     let screenWidth = window.innerWidth;
-    console.log(screenWidth)
+    //console.log(screenWidth)
     if (screenWidth < 1349) {
         const sidevar = document.getElementById('sidevar');
         const itensSidevar = document.querySelectorAll('.sidevar-item');

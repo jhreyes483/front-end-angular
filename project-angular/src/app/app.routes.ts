@@ -21,6 +21,11 @@ export const routes: Routes = [
     // canActivate: [IdentityGuard]
   },
   {
+    path: 'peliculas-f',
+    component: PeliculasComponent,
+    // canActivate: [IdentityGuard]
+  },
+  {
     path: 'home',
     component: HomeComponent
   },
