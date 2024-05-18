@@ -121,18 +121,18 @@ footer p {
 }
 
 
-@media (max-width:768px ){
- .position-left{
-    width: 100%;
+@media (max-width:768px) {
+    .position-left {
+        width: 100%;
 
- }
+    }
 
- 
- .container-inage-movie {
-    display: flex;
-    flex-direction: row;
 
- }
+    .container-inage-movie {
+        display: flex;
+        flex-direction: row;
+
+    }
 
 }
 
@@ -141,7 +141,8 @@ footer p {
     .conntent-component {
         width: 96%;
     }
-    .sidevar{
+
+    .sidevar {
         width: 96%;
     }
 }
