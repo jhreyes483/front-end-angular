@@ -15,11 +15,30 @@
     <h2>
         <p class="subheader">Listado de peliculas</p>
     </h2>
+    <div *ngIf="favorita"  id="favorita">
+        <h2 class="subheader">
+            Pelicula favorita
+        </h2>
+        <h4>
+            {{ favorita.title}}
+        </h4>
+        <h4>
+            {{ favorita.year}}
+        </h4>
+  
+    </div>
     <hr>
     <div id="article" *ngIf="peliculas">
         <div *ngFor="let pelicula of peliculas">
-            <app-pelicula [pelicula]="pelicula">
+            <app-pelicula 
+            [pelicula]="pelicula"
+            (MarcarFavorita)=" MostrarFavorita($event)"
+            >
             </app-pelicula>
+            <!-- 
+                MarcarFavorita evento @Ouput en componente hijo
+                MostrarFavorita evento   en componente padre
+             -->
         </div>
     </div>
 </div>

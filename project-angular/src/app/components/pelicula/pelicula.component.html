@@ -1,12 +1,14 @@
 <div class=" card-body row">
     <div class=" container-inage-movie  p-0  m-0 img-article">
         <img class="image-wrap" src="{{pelicula.image}}" alt="{{pelicula.title}}" title="{{pelicula.title}}">
+
         <span class="year" [ngClass]="{
             'year-green' : pelicula.year > 2016,
             'year-red' : pelicula.year <= 2016
         }">
             {{pelicula.year}}
         </span>
+
     </div>
 
     <div class="float-start col-md-8 row m-0  p-0 row">
@@ -18,6 +20,14 @@
             <p class="position-left">
                 Leer más
             </p>
+        </div>
+        <div class="col-md-12 p-0 m-0 pl-3 position-left">
+            <button 
+            (click) ="seleccionar($event, pelicula)" 
+            class="btn btn-sm btn-warning position-left"
+            >
+                Seleccionar como favorita
+            </button>
         </div>
     </div>
 </div>

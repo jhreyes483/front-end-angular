@@ -5,11 +5,14 @@ import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
   templateUrl: './peliculas-f.component.html',
   styleUrl: './peliculas-f.component.css'
 })
+
+// https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15756484#learning-tools 118
 export class PeliculasFComponent {
   public peliculas;
   public title: string;
   public homeText: string;
   public mostrarPeliculas: boolean;
+  public favorita : any;
   constructor() {
     this.title = "Peliculas"
     this.homeText = "Peliculas"
@@ -47,5 +50,12 @@ export class PeliculasFComponent {
 
   ocualtarPelicula() {
     this.mostrarPeliculas = false;
+  }
+
+
+  MostrarFavorita(event : any){
+    this.favorita = event.pelicula;
+    console.log('MostrarFavorita',event)
+
   }
 }

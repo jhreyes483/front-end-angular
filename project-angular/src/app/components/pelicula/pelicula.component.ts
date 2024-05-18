@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-pelicula',
@@ -7,6 +8,13 @@ import { Component, Input } from '@angular/core';
 })
 export class PeliculaComponent {
 
-  @Input() pelicula : any ;
+  @Input() pelicula: any;
+  @Output() MarcarFavorita = new EventEmitter();
+
+  seleccionar(event: any, pelicula: any) {
+    this.MarcarFavorita.emit({
+      pelicula: pelicula
+    })
+  }
 
 }

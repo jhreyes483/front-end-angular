@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { PaginaPruebaComponent } from './components/pagina-prueba/pagina-prueba.component';
+import { PeliculasFComponent } from './components/peliculas-f/peliculas-f.component';
 
 
 export const routes: Routes = [
@@ -22,7 +23,7 @@ export const routes: Routes = [
   },
   {
     path: 'peliculas-f',
-    component: PeliculasComponent,
+    component: PeliculasFComponent,
     // canActivate: [IdentityGuard]
   },
   {
