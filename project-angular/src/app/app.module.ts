@@ -4,7 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; /* se debe cargar este modulo*/
 import { AppComponent } from './app.component';
 import { MicomponenteComponent } from './components/micomponente/micomponente.component';
 import { ErrorComponent } from './components/error/error.component';
@@ -42,7 +42,7 @@ import { EsParPipe } from './pipes/espar.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
+    FormsModule, /* se debe cargar este modulo*/
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes), 
