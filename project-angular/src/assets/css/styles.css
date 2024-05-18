@@ -11,6 +11,12 @@ body {
 }
 
 
+.subheader {
+    font-size: 38px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
 .my-logo {
     border-radius: 3em;
     padding: 0px;
@@ -120,10 +126,13 @@ footer p {
     width: 20%;
 }
 
+.body-with-card {}
+
 
 @media (max-width:768px) {
     .position-left {
         width: 100%;
+        float: none !important;
 
     }
 
@@ -136,13 +145,32 @@ footer p {
 
 }
 
-
-@media (max-width: 1129px) {
+@media(max-width: 1349px) {
     .conntent-component {
-        width: 96%;
+        width: 98%;
+    }
+
+    .card-sidevar {
+        height: 200px;
+    }
+
+    .sidevar-item {
+        margin-top: 20px;
+        margin-left:3px;
+    }
+
+    .body-with-card {
+        width: 300px;
     }
 
     .sidevar {
+        display: flex;
+        float: none;
+        justify-content: center;
         width: 96%;
     }
+
 }
+
+
+

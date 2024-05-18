@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('resize', function () {
     let screenWidth = window.innerWidth;
-    if (screenWidth < 1129) {
+    console.log(screenWidth)
+    if (screenWidth < 1349) {
         const sidevar = document.getElementById('sidevar');
         const itensSidevar = document.querySelectorAll('.sidevar-item');
         sidevar.classList.remove('col-md-4');
