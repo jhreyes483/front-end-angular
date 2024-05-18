@@ -20,11 +20,18 @@
             Pelicula favorita
         </h2>
         <h4>
-            {{ favorita.title}}
+            <!-- 
+                pipe => formateos de html ej: fechas 
+             uppercase 
+             -->
+            {{ favorita.title | lowercase }}
         </h4>
         <h4>
-            {{ favorita.year}}
+            {{ favorita.year  }}
         </h4>
+        <h5>
+            {{ fecha |  date : 'short'}}
+        </h5>
   
     </div>
     <hr>

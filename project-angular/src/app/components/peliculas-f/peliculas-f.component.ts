@@ -13,9 +13,11 @@ export class PeliculasFComponent {
   public homeText: string;
   public mostrarPeliculas: boolean;
   public favorita : any;
+  public fecha : any;
   constructor() {
     this.title = "Peliculas"
     this.homeText = "Peliculas"
+    this.fecha = new Date(2020, 8, 12);
 
     this.mostrarPeliculas = true;
     console.log("constructor lanzado")
