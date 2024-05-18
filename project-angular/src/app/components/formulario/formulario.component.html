@@ -53,18 +53,15 @@
                 <h2 class="subheadre">Eventos</h2>
             </div>
             <div class=" card-body  col-md-12 row">
-
                 <div class="col-md-4">
-                    <button class="btn btn-sm btn-warning" (click)="hasDadoClick()">Clcik</button>
-                    <input type="text" class="form-control mt-2"  placeholder="blur" [(ngModel)]="campo"  (blur)="hasSalido()" />
-                    <input type="text" class="form-control mt-2"  placeholder="keyup" [(ngModel)]="campo"  (keyup.enter)="onKeyUp()" />
+                    <button class="btn btn-sm btn-warning mt-2" (click)="hasDadoClick()">Clcik</button>
                     {{campo}}
                 </div>
                 <div class="col-md-4">
-                    <button class="btn btn-sm btn-warning" (click)="hasDadoClick()">Clcik</button>
+                    <input type="text" class="form-control mt-2"  placeholder="blur" [(ngModel)]="campo"  (blur)="hasSalido()" />
                 </div>
                 <div class="col-md-4">
-                    <button class="btn btn-sm btn-warning" (click)="hasDadoClick()">Clcik</button>
+                    <input type="text" class="form-control mt-2"  placeholder="keyup" [(ngModel)]="campo"  (keyup.enter)="onKeyUp()" />
                 </div>
             </div>
         </div>
