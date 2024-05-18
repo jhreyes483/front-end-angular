@@ -19,6 +19,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import{ PaginaPruebaComponent } from './components/pagina-prueba/pagina-prueba.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { PeliculasFComponent } from './components/peliculas-f/peliculas-f.component';
+import { EsParPipe } from './pipes/espar.pipe';
 
 
 @NgModule({
@@ -37,8 +38,7 @@ import { PeliculasFComponent } from './components/peliculas-f/peliculas-f.compon
     PaginaPruebaComponent,
     PeliculaComponent,
     PeliculasFComponent,
-
-
+    EsParPipe
   ],
   imports: [
     BrowserModule,
