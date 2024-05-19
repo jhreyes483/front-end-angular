@@ -1,6 +1,42 @@
 <app-slider [nombre]="homeText" [size]="'small'"></app-slider>
 
+
 <div class="conntent-component">
+    <h1 class="subheader">Blog</h1>
+    <div *ngIf="!isLoading">
+        <div class="loader-overlay">
+            <div class="loader">
+                <div class="circle"></div>
+            </div>
+            <div class="loading-text">Cargando.</div>
+        </div>
+    </div>
+
+
+    <div class="" *ngFor="let article of articles">
+
+        <div class=" container-inage-movie  p-0  m-0 img-article">
+            <img class="image-wrap" src="{{article.image}}" alt="{{article.title}}" title="{{article.title}}">
+
+        </div>
+
+        <div class="float-start col-md-8 row m-0  p-0 row">
+            <h4 class="col-md-12 mt-1 "><b class="float-start position-left">{{ article.title }}</b></h4>
+            <p class="float-start ml-3 pt-0 position-left">
+                <span class="text-muted"> {{article.date}} </span>
+            </p>
+            <div class="col-md-12 p-0 m-0 pl-3 position-left">
+                <p class="position-left">
+                    Leer más
+                </p>
+            </div>
+  
+        </div>
+
+
+</div>
+
+
 
 </div>
 

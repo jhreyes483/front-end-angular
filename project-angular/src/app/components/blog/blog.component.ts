@@ -13,19 +13,18 @@ import { response } from 'express';
 export class BlogComponent implements OnInit {
   public homeText = "Blog"
   public articles : any ;
+  public isLoading = false;
 
  constructor(
   private _articleService : ArticleService 
  ){
-
-
  }
-
 
   getArticles() {
     this._articleService.getArticles().then(response => {
       response = response.data;
       if (response.status) {
+        this.isLoading = true;
         console.log('ok--->');
         this.articles = response.articles;
         console.log(this.articles)
