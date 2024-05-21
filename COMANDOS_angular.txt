@@ -1,3 +1,36 @@
+
+Example
+// https://github.com/ganatan/angular-app/tree/master
+// https://github.com/pedrovelasquez9
+
+
+actualizar npm 
+npm install -g npm@latest
+
+borrar cache npm
+npm cache clean --force
+
+
+desactivar aditorias para evitar fallos
+npm set audit false
+
+desinstalar versiones anteriores de angular
+npm uninstall -g angular-cli
+npm uninstall -g angular/cli
+npm cache clean --force
+
+INSTALAR ANGULAR
+npm install -g @angular/cli
+
+crear proyecto de angular
+ng new
+// tambien se puede crear sin dependecia por componentes
+ng new --no-standalone nameproyect
+
+ejecutar el serve
+ng serve
+
+
 INSTALAR ANGULAR
 npm install -g @angular/cli
 
